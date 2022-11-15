@@ -189,11 +189,11 @@ public class BLE extends Service {
      *         {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
      *         callback.
      */
-    public boolean connect(final String address) {
-        if (mBluetoothAdapter == null || address == null) {
-            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
-            return false;
-        }
+    public boolean connect(String address) {
+//        if (mBluetoothAdapter == null || address == null) {
+//            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
+//            return false;
+//        }
 
         // Previously connected device.  Try to reconnect.
         if (mBluetoothDeviceAddress != null && address.equals(mBluetoothDeviceAddress)
